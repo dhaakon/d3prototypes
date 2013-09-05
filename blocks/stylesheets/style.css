@@ -1,0 +1,89 @@
+/* line 32, ../sass/style.sass */
+html {
+  background-size: cover;
+  background: black;
+}
+
+/* line 36, ../sass/style.sass */
+html, body {
+  margin: 0;
+  height: 100%;
+  background: white;
+}
+
+/* line 41, ../sass/style.sass */
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+/* line 44, ../sass/style.sass */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 51, ../sass/style.sass */
+#heading #dhaakon-heading {
+  font-family: overlock;
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: -1px;
+  font-size: 2.5em;
+  margin-left: 10px;
+  padding-top: 12px;
+  display: block;
+  border-bottom: 3px solid black;
+  width: 140px;
+}
+/* line 64, ../sass/style.sass */
+#heading #dhaakon-experiment {
+  display: block;
+  padding-left: 11px;
+  padding-top: 4px;
+  font-family: source-sans-pro;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 0.35em;
+}
+
+/* line 74, ../sass/style.sass */
+.container {
+  -webkit-transition: 400ms, opacity;
+  -moz-transition: 400ms, opacity;
+  -ms-transition: 400ms, opacity;
+  -o-transition: 400ms, opacity;
+  opacity: 0;
+  width: 1048px;
+  display: block;
+  margin: 0px auto 0 auto;
+  background: white;
+  float: left;
+}
+
+/* line 83, ../sass/style.sass */
+.left {
+  float: left;
+}
+
+/* line 85, ../sass/style.sass */
+.right {
+  float: right;
+}
+
+/* line 89, ../sass/style.sass */
+footer {
+  position: relative;
+  bottom: 0px;
+  height: 40px;
+  display: block;
+  width: 100%;
+}
+/* line 96, ../sass/style.sass */
+footer p {
+  color: grey;
+  float: left;
+  text-indent: 20px;
+  font-family: source-sans-pro;
+  font-size: 12px;
+}

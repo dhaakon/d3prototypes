@@ -1,0 +1,102 @@
+$border: 1px solid black
+$red:       rgba(255,0,0,0.65)
+$green:     rgba(0,255,0,0.65)
+$blue:      rgba(0,0,255,0.65)
+
+$sidebar_width: 200px
+$buffer: 100px
+
+$width:     748px + $buffer
+
+$inactive:  grey
+$active:     black
+
+$Neue:  "Helvetica Neue", Helvetica, Arial, sans-serif
+
+
+@mixin rgb-border
+  :box-shadow 0px 2px 0px 0px $red, 0px 4px 0px 0px $green, 0px 6px 0px 0px $blue
+
+@mixin bg
+  :background black 
+
+@mixin transition($time, $property)
+  :-webkit-transition $time, $property 
+  :-moz-transition $time, $property 
+  :-ms-transition $time, $property 
+  :-o-transition $time, $property 
+
+@mixin fade-in
+  @include transition(400ms, opacity)
+
+html
+  :background-size cover
+  @include bg
+
+html, body
+  :margin 0
+  :height 100%
+  :background white 
+
+h1, h2, h3, h4
+  :margin      0
+
+a
+  :text-decoration    none
+  :color              black
+
+// Experiment Heading
+
+#heading
+  #dhaakon-heading
+    :font-family      overlock
+    :font-weight      900
+    :font-style       italic
+    :letter-spacing   -1px
+    :font-size        2.5em
+    :margin-left      10px
+    :padding-top      12px
+    :display          block
+
+    :border-bottom    3px solid black
+    :width            140px
+
+  #dhaakon-experiment
+    :display          block
+    :padding-left     11px
+    :padding-top      4px
+    :font-family      source-sans-pro
+    :font-weight      800
+    :text-transform   uppercase
+    :font-size        1em
+    :letter-spacing   0.35em
+
+.container
+  @include fade-in
+  :opacity       0
+  :width         $width + $sidebar_width
+  :display       block
+  :margin        0px auto 0 auto
+  :background    white
+  :float left
+
+.left
+  :float left
+.right
+  :float right
+
+// code
+footer
+  :position     relative 
+  :bottom       0px
+  :height       40px
+  :display      block
+  :width        100%
+  
+  p
+    :color        grey
+    :float        left
+    :text-indent  20px
+    :font-family  source-sans-pro
+    :font-size    12px
+
